@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+  <style>
+    .hours {
+      width: 30px;
+      height: 70px;
+      text-align: center;
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+    }
+
+    select{
+      border: none;
+
+    }
+    .hours::-webkit-scrollbar { 
+        display: none;  
+    }
+
+    .hours option {
+      background-color:black;
+      color: white;
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+    }
+
+    .hours option:hover {
+      background-color: #383838;
+    }
+
+    body{
+      width: 200px; 
+      height: 100px; 
+      margin-left: auto; 
+      margin-right: auto; 
+      text-align: center;
+      background-color: black;
+      color:white;
+    }
+
+    .counter {
+      background: transparent;
+      border:10px solid yellow;    
+      height:100px;
+      border-radius:50%;
+      -moz-border-radius:50%;
+      -webkit-border-radius:50%;
+      width:135px;
+      padding-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+  </style>
+
+  <body id="body">
+      <div id="form">
+        <div style="flex-direction:row; display: flex; margin-left: auto;margin-right: auto;">
+
+        <div style="text-align:center;margin: 10px;">
+          <label>Hours</label>
+          <br/> <br/>
+          <select size="2" class='hours' id='hours'>
+            <option value="0" selected>0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+          </select>
+        </div>
+          <br/><br/>
+          <div style="text-align:center;margin: 10px;">
+            <label>Minutes</label>
+          <br/> <br/>
+          <select size="2" class='hours' id='minutes'>
+            <option value="0" selected>0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="10">24</option>
+            <option value="11">25</option>
+            <option value="12">26</option>
+            <option value="13">27</option>
+            <option value="14">28</option>
+            <option value="15">29</option>
+            <option value="16">30</option>
+            <option value="17">31</option>
+            <option value="18">32</option>
+            <option value="19">33</option>
+            <option value="20">34</option>
+            <option value="21">35</option>
+            <option value="22">36</option>
+            <option value="23">37</option>
+            <option value="22">38</option>
+            <option value="23">39</option>
+            <option value="1">40</option>
+            <option value="1">41</option>
+            <option value="2">42</option>
+            <option value="3">43</option>
+            <option value="4">44</option>
+            <option value="5">45</option>
+            <option value="6">46</option>
+            <option value="7">47</option>
+            <option value="8">48</option>
+            <option value="9">49</option>
+            <option value="1">50</option>
+            <option value="1">51</option>
+            <option value="2">52</option>
+            <option value="3">53</option>
+            <option value="4">54</option>
+            <option value="5">55</option>
+            <option value="6">56</option>
+            <option value="7">57</option>
+            <option value="8">58</option>
+            <option value="9">59</option>
+          </select>
+        </div>
+          <br/><br/>
+          <div style="text-align:center;margin: 10px;">
+            <label>Seconds</label>
+          <br/> <br/>
+          <select size="2" class='hours' id='seconds'>
+            <option value="0" selected>0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="10">24</option>
+            <option value="11">25</option>
+            <option value="12">26</option>
+            <option value="13">27</option>
+            <option value="14">28</option>
+            <option value="15">29</option>
+            <option value="16">30</option>
+            <option value="17">31</option>
+            <option value="18">32</option>
+            <option value="19">33</option>
+            <option value="20">34</option>
+            <option value="21">35</option>
+            <option value="22">36</option>
+            <option value="23">37</option>
+            <option value="22">38</option>
+            <option value="23">39</option>
+            <option value="1">40</option>
+            <option value="1">41</option>
+            <option value="2">42</option>
+            <option value="3">43</option>
+            <option value="4">44</option>
+            <option value="5">45</option>
+            <option value="6">46</option>
+            <option value="7">47</option>
+            <option value="8">48</option>
+            <option value="9">49</option>
+            <option value="1">50</option>
+            <option value="1">51</option>
+            <option value="2">52</option>
+            <option value="3">53</option>
+            <option value="4">54</option>
+            <option value="5">55</option>
+            <option value="6">56</option>
+            <option value="7">57</option>
+            <option value="8">58</option>
+            <option value="9">59</option>
+          </select> 
+          </div>
+
+          <br/><br/>
+        </div>
+
+      <select id='endTimerOption'>
+        <option selected value=0>
+          Current Tab
+        </option>
+
+        <option value=1>
+          Alarm
+        </option>
+
+        <option value=2>
+          All Tabs
+        </option>
+      </select>
+      <br/>      <br/>
+
+      <div style="display: flex; width: 200px; bottom: 0;">
+        <input type="button" value="Cancel" id="cancel">
+
+        <input type="submit" value="Start" id="submit">
+    </div>
+
+      </div> 
+
+    <div id="counterDiv" style="display:none">
+    <div  class="counter" style="color:white; font-size: xx-large;">
+      <span id="counter"> </span>
+    </div>
+    <input type="button" value="Cancel" id="cancel">
+</div>
+      <script src="./popup.js"></script>
+  </body>
+
+</html>
