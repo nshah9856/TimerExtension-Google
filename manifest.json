@@ -5,7 +5,7 @@
     "description" : "An extension designed for timer",
 
     "browser_action" : {
-        "default_icon" : "icon.png",
+        "default_icon" : "./assests/icon.png",
         "default_popup": "popup.html"
     },
     "permissions": ["tabs"],
@@ -15,6 +15,6 @@
         "persistent": true
     },
     "web_accessible_resources": [
-        "alarm.mp3"
+        "./assests/alarm.mp3"
     ]
   }

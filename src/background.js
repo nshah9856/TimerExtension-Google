@@ -83,7 +83,7 @@ function endOfCounter(){
     }
     else{
         //play sound
-        const myAudio = new Audio(chrome.runtime.getURL("alarm.mp3"));
+        const myAudio = new Audio(chrome.runtime.getURL("../assests/alarm.mp3"));
         myAudio.play();
     }
 }
